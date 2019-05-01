@@ -4,9 +4,11 @@ Dalam melakukan normalisasi harus dilakukan [funcional dependency(FD)](https://w
 
 #### Tujuan Normalisasi Database
 
-- Menghilangkan dan mengurangi redudansi data.
-- Memastikan dependensi data (Data berada pada tabel yang tepat).
-- Mempermudah pemodifikasian data
+- Untuk membebaskan relasi yang tidak diinginkan dari tambah, ubah, dan hapus ketergantungan.
+- Untuk mengurangi menstruktur ulang relasi, ketika tipe data baru diperkenalkan, dan dengan demikian meningkatkan umur program aplikasi.
+- Untuk membuat model relasional lebih informatif bagi pengguna.
+- Untuk membuat relasi netral ke statistik kueri, di mana statistik ini dapat berubah seiring waktu.
+> E.F. Codd, "Further Normalization of the Data Base Relational Model"
 
 Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemungkinan yang akan merugikan sistem secara keseluruhan.
 
