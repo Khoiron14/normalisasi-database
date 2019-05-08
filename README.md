@@ -2,7 +2,7 @@
 Normalisasi database digunakan untuk meminimalkan redundansi data pada suatu database agar database tersebut dapat bekerja dengan optimal. Teori ini pertama kali ditemukan oleh [Dr. Codd](https://id.wikipedia.org/wiki/Edgar_F._Codd) kira-kira sekitar tahun 1970-an. 
 Dalam melakukan normalisasi harus dilakukan [funcional dependency(FD)](https://www.geeksforgeeks.org/functional-dependency-and-attribute-closure/). FD dapat disimbolkan dengan X->Y yang artinya Y meiliki ketergantungan dengan X atau X secara fungsional memiliki ketergantungan dengan Y.
 
-#### Tujuan Normalisasi Database
+### Tujuan Normalisasi Database
 
 - Untuk membebaskan hubungan yang tidak diinginkan dari tambah, ubah, dan hapus ketergantungan.
 - Untuk mengurangi menstruktur ulang hubungan, ketika tipe data baru diperkenalkan, dan dengan demikian meningkatkan umur program aplikasi.
@@ -16,11 +16,8 @@ Ketika memodifikasi (memasukkan, memperbarui, atau menghapus) suatu hubungan, be
 - *DELETE* Anomali : Penghapusan data yang tidak sesuai dengan yang diharapkan, artinya data yang harusnya tidak terhapus mungkin ikut terhapus.
 - *UPDATE* Anomali : Situasi dimana nilai yang diubah menyebabkan inkonsistensi database, dalam artian data yang diubah tidak sesuai dengan yang diperintahkan atau yang diinginkan.
 
-## TAHAPAN NORMALISASI : 
-
-Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF).
-
-1. Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
+### TAHAPAN NORMALISASI : 
+1. Bentuk Normal Pertama (1NF) : Memisahkan duplikat menjadi beberapa kolom
 2. Bentuk Normal Kedua (2NF)   : Menghilangkan Ketergantungan Parsial
 3. Bentuk Normal Ketiga (3NF)  : Menghilangkan Ketergantungan Transitif
 4. Bentuk Normal Boyce-Code Form (BCNF) : Menghilangkan anomali-anomali hasil dari ketergantungan fungsional
